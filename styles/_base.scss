@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: $small-font;
+}
+
+body {
+    font-family: 'Source Serif Pro', Arial, sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: $secondary-color;
+    transition: color .3s;
+    &:hover {
+        color: rgba(255, 172, 28, 1);
+    }
+}

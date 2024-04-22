@@ -1,0 +1,21 @@
+.contact {
+    font-size: $big-font;
+    line-height: 2.77rem;
+    margin: 60px 0;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        font-size: 1.388rem;
+        line-height: 141.87%;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        font-size: $base-font;
+        margin: 40px auto;
+    }
+}

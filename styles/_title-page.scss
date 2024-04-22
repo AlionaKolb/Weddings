@@ -1,0 +1,29 @@
+.title-page {
+    padding-top: 218px;
+    &__description {
+        font-size: 1.388rem;
+        line-height: 1.722rem;
+        font-weight: 400;
+        margin: 35px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title-page {
+        padding-top: 183px;
+        &__description {
+            font-size: $small-font;
+            line-height: 1.27rem;
+            margin-bottom: 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title-page {
+        padding-top: 171px;
+        &__description {
+            margin-bottom: 63px;
+        }
+    }
+}

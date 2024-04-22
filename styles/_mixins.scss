@@ -1,0 +1,57 @@
+@mixin button-styles ($text-color, $border-styles) {
+    color: $text-color;
+    border: $border-styles;
+    font-weight: 600;
+    font-size: $middle-font;
+    display: block;
+    cursor: pointer;
+    max-width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    transition: all 0.2s linear 0.1s;
+    margin: 0 auto;
+}
+
+@mixin pseudo ($content, $background-color) {
+    color: $secondary-color;
+    font-size: 0.77rem;
+    font-weight: 600;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -29px;
+    left: -29px;
+    content: $content;
+    background-color: $background-color;
+}
+
+@mixin pseudo1250 {
+    font-size: 0.6rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: -20px;
+    left: -20px;
+}
+
+@mixin pseudo1024 {
+    font-size: 0.66rem;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    top: -23px;
+    left: -23px;
+}
+
+@mixin pseudo768 {
+    font-size: 0.77rem;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    top: -28px;
+    left: -28px;
+}

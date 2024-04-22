@@ -1,0 +1,19 @@
+.background {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $secondary-color;
+    padding-bottom: 185px;
+}
+
+@media screen and (max-width: 1024px) {
+    .background {
+        padding-bottom: 153px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        padding-bottom: 99px;
+    }
+}

@@ -1,0 +1,31 @@
+.title {
+    max-width: 914px;
+    font-size: 4.69rem;
+    line-height: 121.69%;
+    letter-spacing: 0.07em;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        max-width: 697px;
+        font-size: 3.33rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        max-width: 329px;
+        font-size: 2.77rem;
+        line-height: 3.22rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title {
+        max-width: 329px;
+        font-size: 2rem;
+        line-height: 3.22rem;
+    }
+}

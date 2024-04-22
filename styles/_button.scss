@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px) {
+    .button {
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 1.0625rem;
+    }
+}
+
+.button--white {
+    @include button-styles($secondary-color, 2px solid $secondary-color);
+    &:hover {
+        color: $primary-color;
+        background-color: $secondary-color;
+    }
+}
+
+.button--black {
+    @include button-styles($primary-color, 2px solid $primary-color);
+    &:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        font-size: 0.94rem;
+        height: 48px;
+        line-height: 48px;
+    }
+}

@@ -1,0 +1,28 @@
+.topbutton {
+    display: inline-block;
+    background-color: rgba(255, 172, 28, 1);
+    color: $secondary-color;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 19px;
+    right: 19px;
+    transition: .5s;
+    &::before {
+        content: "";
+        width: 30px;
+        height: 18px;
+        display: block;
+        background-image: url("../icons/arrow.svg");
+        margin: 0 auto;
+        margin-top: 35%;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(232, 248, 2);
+        &:active {
+            background-color: rgb(255, 5, 5);
+        }
+    }
+}

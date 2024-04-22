@@ -1,0 +1,37 @@
+.menu {
+    padding: 100px 0;
+    &__description {
+        font-size: 1.388rem;
+        color: $third-color;
+        margin: 30px 0 60px;
+        line-height: 1.72rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        padding: 80px 0;
+        &__description {
+            font-size: $small-font;
+            margin: 30px 0 48px;
+            line-height: 1.55rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 70px 0;
+        &__description {
+            font-size: $middle-font;
+            margin: 20px 0 58px;
+            line-height: 1.388rem;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .favorite-dishes {
+        padding: 60px 12px 40px;
+    }
+}
