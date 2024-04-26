@@ -1,23 +1,31 @@
-window.onload = function() {
+const days = document.querySelector('#days');
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
+
+// дата предстоящего события (год, месяц, число)
+const eventDate = new Date(2024, 7, 12);
+
+
+
+function timeToEvent() {
     // текущая дата
-    let now = new Date();
-    // дата предстоящего события (год, месяц, число)
-    const eventDate = new Date(2024, 7, 12);
-    const span = document.getElementById('timetoevent');
-    let text = "До свадьбы осталось: ";
-
-    let div = document.getElementById('event-mess');
-    // если событие еще не наступило
-    if (now < eventDate) {
-        div.firstChild.nodeValue = text;
-        window.setInterval(function() {
-            span.innerHTML = timeToEvent(eventDate);
-        }, 1000);
-    }
-}
-
-function timeToEvent(eventDate) {
     const now = new Date();
+
+    const diff = eventDate - now;
+
+    const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const hoursLeft = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const minutesLeft = Math.floor(diff / 1000 / 60) % 60;
+    const secondsLeft = Math.floor(diff / 1000) % 60;
+    console.log(daysLeft, hoursLeft, minutesLeft, secondsLeft);
+
+    days.innerText = daysLeft;
+    hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
+    minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
+    seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+
+    /*const now = new Date();
     let output = '';
     // количество дней до события
     let daystoED = Math.floor(Math.round(eventDate - now) / 86400000);
@@ -33,5 +41,30 @@ function timeToEvent(eventDate) {
     secondstoED = (secondstoED < 10) ? "0" + secondstoED : secondstoED;
     //сообщение
     output = daystoED + " дн. " + hourstoED + " час. " + minutestoED + " мин. " + secondstoED + " сек.";
-    return output;
+    return output;*/
 }
+
+/*window.onload = function() {
+    const diff = eventDate - now;
+
+    const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const hoursLeft = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const minutesLeft = Math.floor(diff / 1000 / 60) % 60;
+    const secondsLeft = Math.floor(diff / 1000) % 60;
+    console.log(daysLeft, hoursLeft, minutesLeft, secondsLeft);
+
+    days.innerText = daysLeft;
+    hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
+    minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
+    seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+
+
+if (now < eventDate) {
+    window.setInterval(function() {
+            span.innerHTML = timeToEvent(eventDate);
+        }, 1000);
+        setInterval(timeToEvent, 1000);
+    }
+}*/
+
+setInterval(timeToEvent, 1000);
