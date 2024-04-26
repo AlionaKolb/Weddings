@@ -84,7 +84,12 @@ a:hover {
 @media screen and (max-width: 1024px) {
     .logo {
         font-size: 2rem;
-        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
     }
 }
 
@@ -113,10 +118,11 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     .title-page {
-        padding-top: 350px;
+        padding-top: 170px;
     }
     .title-page__description {
-        margin-bottom: 40px;
+        font-size: 1rem;
+        margin: 10px 0 10px;
     }
 }
 
@@ -144,6 +150,13 @@ a:hover {
     .navigation__item::after {
         width: 40%;
         margin: 350px auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation__item::after {
+        width: 50%;
+        margin: 220px auto 0;
     }
 }
 
@@ -302,6 +315,13 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1rem;
+        margin: 0 0 30px;
+    }
+}
+
 .item {
     width: 100%;
     border-radius: 4px;
@@ -334,13 +354,6 @@ a:hover {
 }
 
 .event {
-    /*
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    padding-bottom: 550px;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);*/
     display: flex;
     transform: scale(2);
     align-items: center;
@@ -378,6 +391,12 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 420px) {
+    .time h3 {
+        font-size: 0.5rem;
+    }
+}
+
 small {
     font-size: smaller;
 }
@@ -397,6 +416,12 @@ small {
 @media screen and (max-width: 768px) {
     small {
         font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .time h3 {
+        font-size: 0.3rem;
     }
 }
 
