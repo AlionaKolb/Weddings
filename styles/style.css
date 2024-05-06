@@ -75,7 +75,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     .background {
         padding-bottom: 99px;
-        height: 630px;
+        height: 730px;
     }
 }
 
@@ -122,7 +122,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     .title-page {
-        padding-top: 170px;
+        padding-top: 200px;
     }
     .title-page__description {
         font-size: 1rem;
@@ -160,7 +160,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     .navigation__item::after {
         width: 50%;
-        margin: 220px auto 0;
+        margin: 270px auto 0;
     }
 }
 
