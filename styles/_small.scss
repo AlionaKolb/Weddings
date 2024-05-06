@@ -1,0 +1,21 @@
+small {
+    font-size: smaller;
+}
+
+@media screen and (max-width: 1500px) {
+    small {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    small {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    small {
+        font-size: 0.4rem;
+    }
+}

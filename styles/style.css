@@ -19,17 +19,6 @@ h2 {
     font-family: "Dancing Script", cursive;
 }
 
-.shop-item {
-    width: 100%;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border: 1px solid;
-    backdrop-filter: blur(5px);
-}
-
 a {
     text-decoration: none;
     display: block;
@@ -40,6 +29,23 @@ a {
 
 a:hover {
     color: #5fcff1;
+}
+
+.icons::before {
+    content: "";
+    width: 57px;
+    height: 22px;
+    display: block;
+    background-image: url("../icons/Vector.svg");
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .icons::before {
+        width: 57px;
+        height: 22px;
+        margin: 0 auto;
+    }
 }
 
 .background {
@@ -69,6 +75,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     .background {
         padding-bottom: 99px;
+        height: 630px;
     }
 }
 
@@ -97,12 +104,6 @@ a:hover {
     padding: 550px 0 70px;
 }
 
-@media screen and (max-width: 1024px) {
-    .title-page {
-        padding: 350px 0 20px;
-    }
-}
-
 .title-page__description {
     font-size: 2rem;
     line-height: 1.722rem;
@@ -111,6 +112,9 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    .title-page {
+        padding: 350px 0 20px;
+    }
     .title-page__description {
         padding-bottom: 20px;
     }
@@ -122,7 +126,7 @@ a:hover {
     }
     .title-page__description {
         font-size: 1rem;
-        margin: 10px 0 10px;
+        margin: 10px 0 40px;
     }
 }
 
@@ -261,6 +265,14 @@ a:hover {
     object-fit: cover;
 }
 
+.column__heading {
+    background: #000;
+}
+
+.column__heading img {
+    opacity: 0.6;
+}
+
 .backgroundLogo {
     position: relative;
     background-image: url(../img/logo.PNG);
@@ -393,7 +405,7 @@ a:hover {
 
 @media screen and (max-width: 420px) {
     .time h3 {
-        font-size: 0.5rem;
+        font-size: 0.3rem;
     }
 }
 
@@ -417,20 +429,6 @@ small {
     small {
         font-size: 0.4rem;
     }
-}
-
-@media screen and (max-width: 420px) {
-    .time h3 {
-        font-size: 0.3rem;
-    }
-}
-
-.column__heading {
-    background: #000;
-}
-
-.column__heading img {
-    opacity: 0.6;
 }
 
 .socials {

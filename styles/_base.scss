@@ -1,24 +1,53 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html {
-    font-size: $small-font;
+    font-size: 28px;
 }
 
 body {
-    font-family: 'Source Serif Pro', Arial, sans-serif;
+    font-family: 'Source Serif Pro', Arial, 'Dancing Script', sans-serif;
     text-align: center;
+}
+
+h1,
+h2 {
+    font-family: "Dancing Script", cursive;
 }
 
 a {
     text-decoration: none;
     display: block;
     color: $secondary-color;
+    -webkit-transition: color .3s;
     transition: color .3s;
     &:hover {
-        color: rgba(255, 172, 28, 1);
+        color: #5fcff1;
     }
+}
+
+.wrapper {
+    max-width: 914px;
+    margin: 0 auto;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.countdown-wrapper {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.event {
+    display: flex;
+    transform: scale(2);
+    align-items: center;
+    justify-content: center;
 }

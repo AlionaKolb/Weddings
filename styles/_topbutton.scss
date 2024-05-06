@@ -1,14 +1,15 @@
 .topbutton {
     display: inline-block;
-    background-color: rgba(255, 172, 28, 1);
-    color: $secondary-color;
+    color: white;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     position: fixed;
     bottom: 19px;
     right: 19px;
+    -webkit-transition: .5s;
     transition: .5s;
+    background-color: #696966;
     &::before {
         content: "";
         width: 30px;
@@ -20,9 +21,9 @@
     }
     &:hover {
         cursor: pointer;
-        background-color: rgb(232, 248, 2);
+        background-color: #696966;
         &:active {
-            background-color: rgb(255, 5, 5);
+            background-color: #d3c4c4;
         }
     }
 }

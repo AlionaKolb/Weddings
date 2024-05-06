@@ -1,11 +1,20 @@
 .logo {
-    font-size: 2.77rem;
-    color: $secondary-color;
-    transition: color .3s;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 50px;
+    font-size: 4rem;
+    color: white;
 }
 
 @media screen and (max-width: 1024px) {
     .logo {
-        font-size: $big-font;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
     }
 }

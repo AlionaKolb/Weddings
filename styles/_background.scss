@@ -1,19 +1,29 @@
 .background {
+    position: relative;
     background-image: url(../img/banner.jpg);
+    -webkit-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: $secondary-color;
-    padding-bottom: 185px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .5);
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .background {
-        padding-bottom: 153px;
+        padding-bottom: 40px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .background {
         padding-bottom: 99px;
+        height: 630px;
     }
 }

@@ -1,0 +1,24 @@
+.navi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    &__item {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 150px;
+        background-color: #c0bebe;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navi {
+        &__item {
+            width: 2px;
+            height: 100px;
+        }
+    }
+}

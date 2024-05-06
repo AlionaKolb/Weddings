@@ -1,17 +1,48 @@
 .socials {
+    margin-bottom: 50px;
     &__link {
         display: inline-block;
+        -webkit-transition: all .2s linear .1s;
         transition: all .2s linear .1s;
-        background-color: $secondary-color;
+        background-color: #262626;
         border-radius: 50%;
-        width: 52px;
-        height: 52px;
-        line-height: 52px;
+        width: 82px;
+        height: 82px;
+        line-height: 82px;
         font-size: 1.3rem;
-        color: rgba(38, 38, 38, 1);
+        color: white;
         &:hover {
+            -webkit-transform: scale(2, 2);
             transform: scale(2, 2);
-            margin-bottom: 50px;
+        }
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .socials {
+        margin-bottom: 30px;
+        &__link {
+            width: 52px;
+            height: 52px;
+            line-height: 52px;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .socials__link {
+        display: block;
+        &:not(:last-child) {
+            margin: 0 auto 10px;
+        }
+        &:last-child {
+            margin: 0 auto;
         }
     }
 }

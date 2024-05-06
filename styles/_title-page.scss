@@ -1,29 +1,28 @@
 .title-page {
-    padding-top: 218px;
+    padding: 550px 0 70px;
     &__description {
-        font-size: 1.388rem;
+        font-size: 2rem;
         line-height: 1.722rem;
         font-weight: 400;
-        margin: 35px 0 60px;
+        margin: 40px 0 40px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .title-page {
-        padding-top: 183px;
+        padding: 350px 0 20px;
         &__description {
-            font-size: $small-font;
-            line-height: 1.27rem;
-            margin-bottom: 63px;
+            padding-bottom: 20px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .title-page {
-        padding-top: 171px;
+        padding-top: 170px;
         &__description {
-            margin-bottom: 63px;
+            font-size: 1rem;
+            margin: 10px 0 40px;
         }
     }
 }

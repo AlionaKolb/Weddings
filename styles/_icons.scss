@@ -1,0 +1,16 @@
+.icons::before {
+    content: "";
+    width: 57px;
+    height: 22px;
+    display: block;
+    background-image: url("../icons/Vector.svg");
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .icons::before {
+        width: 57px;
+        height: 22px;
+        margin: 0 auto;
+    }
+}
