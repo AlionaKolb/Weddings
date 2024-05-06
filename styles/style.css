@@ -75,7 +75,6 @@ a:hover {
 @media screen and (max-width: 768px) {
     .background {
         padding-bottom: 99px;
-        height: 730px;
     }
 }
 
